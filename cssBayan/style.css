@@ -28,6 +28,8 @@ hr {
 }
 
 .accordion {
+    display:flex;
+    flex-direction: column;
     color: blue;
 }
 .accordion:hover {
@@ -36,6 +38,16 @@ hr {
 }
 .selects {
     position: relative;
+}
+.selects:active {
+    color: blue;
+}
+.selects:hover .img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 250px;
+    height: 250px;
+    margin: auto;
 }
 .cross {
     display: none;
@@ -51,63 +63,43 @@ hr {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.img {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    transition: 2s;
-}
 
-.img-1{
-    display: none;
-}
-.img-1 {
-    background-image: url(./img/how-i-see-russian.svg);
-    transition: 2s;
-}
-
+/*Mem 1*/
 .select-1:hover .img-1 {
-    display: block;
+    background-image: url(./img/how-i-see-russian.svg);
+}
+.select-1:hover .cross {
+    transform: rotate(45deg);
 }
 
-.img-2{
-    display: none;
-}
-.img-2 {
+/*Mem 2*/
+.select-2:hover .img-2 {
     background-image: url(./img/not-a-bug-russian.svg);
 }
-.select-2:hover .img-2 {
-    display: block;
+.select-2:hover .cross {
+    transform: rotate(45deg);
 }
 
-.img-3{
-    display: none;
-}
-.img-3 {
+/*Mem 3*/
+.select-3:hover .img-3 {
     background-image: url(./img/one-hour-before-deadline.svg);
 }
-.select-3:hover .img-3 {
-    display: block;
+.select-3:hover .cross {
+    transform: rotate(45deg);
 }
 
-.img-4{
-    display: none;
-}
-.img-4 {
-    background-image: url(./img/reading-the-chat.svg);
-}
+/*Mem 4*/
 .select-4:hover .img-4 {
-    display: block;
+    background-image: url(./img/reading-the-chat.svg)
+}
+.select-4:hover .cross {
+    transform: rotate(45deg);
 }
 
-.img-5{
-    display: none;
-}
-.img-5 {
+/*Mem 5*/
+.select-5:hover .img-5 {
     background-image: url(./img/thanks.svg);
 }
-.select-5:hover .img-5 {
-    display: block;
+.select-5:hover .cross {
+    transform: rotate(45deg);
 }
