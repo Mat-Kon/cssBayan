@@ -1,0 +1,29 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.accordion-box {
+    width: 50%;
+    margin: auto;
+    padding: 20px 0;
+    background-color: beige;
+}
+.accordion-box p {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.wrapper-accordion {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.accordion {
+    color: blue;
+}
+.accordion:hover {
+    color: black;
+}
