@@ -1,20 +1,24 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 1.2rem;
     margin: 0;
 }
+@keyframes zoom {
+    0% {transform: scale(0.7);}
+    100% {transform: scale(1);}
+  }
 
 .accordion-box {
-    height: 1080px;
-    padding: 20px 0;
+    height: 35.5em;
+    padding: 1em 0;
     background-color: beige;
 }
 .name-accordion {
-    margin: 5px 0;
+    margin: 0.1em 0;
 }
 .accordion-box p {
     font-weight: 600;
-    margin: 5px 0;
+    margin: 0.1em 0;
 }
 hr {
     width: 100%;
@@ -23,7 +27,7 @@ hr {
 .wrapper-accordion {
     display: flex;
     flex-direction: column;
-    width: 620px;
+    width: 40%;
     margin: auto;
 }
 
@@ -44,21 +48,20 @@ hr {
 }
 .selects:hover .img{
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 250px;
-    height: 250px;
+    background-size: 90% 90%;
+    width: 14em;
+    height: 14em;
     margin: auto;
+    animation-name: zoom ;
+    animation-duration: 2s;
 }
-.cross {
-    display: none;
-}
+
 .accordion:hover .cross {
-    display: block;
-    width: 10px;
-    height: 10px;
+    width: 0.8rem;
+    height: 0.8rem;
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 0.3rem;
+    right: 0.8rem;
     background-image: url(./icon/cross.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -68,6 +71,7 @@ hr {
 .select-1:hover .img-1 {
     background-image: url(./img/how-i-see-russian.svg);
 }
+
 .select-1:hover .cross {
     transform: rotate(45deg);
 }
@@ -102,4 +106,80 @@ hr {
 }
 .select-5:hover .cross {
     transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 820px){
+    body {
+        font-size: 2rem;
+    }
+    .accordion-box {
+        height: 50rem;
+        padding: 1.3rem 7rem;
+    }
+    .wrapper-accordion {
+        width: 100%;
+    }
+    /*Mem 1*/
+.select-1:focus .img-1 {
+    background-image: url(./img/how-i-see-russian.svg);
+}
+
+.select-1:focus .cross {
+    transform: rotate(45deg);
+}
+
+/*Mem 2*/
+.select-2:focus .img-2 {
+    background-image: url(./img/not-a-bug-russian.svg);
+}
+.select-2:focus .cross {
+    transform: rotate(45deg);
+}
+
+/*Mem 3*/
+.select-3:focus .img-3 {
+    background-image: url(./img/one-hour-before-deadline.svg);
+}
+.select-3:focus .cross {
+    transform: rotate(45deg);
+}
+
+/*Mem 4*/
+.select-4:focus .img-4 {
+    background-image: url(./img/reading-the-chat.svg)
+}
+.select-4:focus .cross {
+    transform: rotate(45deg);
+}
+
+/*Mem 5*/
+.select-5:focus .img-5 {
+    background-image: url(./img/thanks.svg);
+}
+.select-5:focus .cross {
+    transform: rotate(45deg);
+}
+}
+
+@media only screen and (max-width: 320px){
+    body {
+        font-size: 0.8rem;
+    }
+    .accordion-box {
+        padding: 1.3rem 2rem;
+    }
+    .accordion-box p {
+        padding: 1rem 0rem;
+    }
+
+    .accordion:hover .cross {
+        width: 0.8rem;
+        height: 0.8rem;
+        position: absolute;
+        top: 1rem;
+        right: 0.8rem;
+        background-image: url(./icon/cross.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
 }
