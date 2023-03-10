@@ -13,7 +13,9 @@ body {
     font-weight: 600;
     margin: 5px 0;
 }
-
+.line {
+    width: 100%;
+}
 .wrapper-accordion {
     display: flex;
     flex-direction: column;
@@ -26,4 +28,28 @@ body {
 }
 .accordion:hover {
     color: black;
+}
+
+.img {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 15em;
+    height: 15em;
+    margin: auto;
+}
+
+.img-1 {
+    background-image: url(./img/how-i-see-russian.svg);
+}
+.img-2 {
+    background-image: url(./img/not-a-bug-russian.svg);
+}
+.img-3 {
+    background-image: url(./img/one-hour-before-deadline.svg);
+}
+.img-4 {
+    background-image: url(./img/reading-the-chat.svg);
+}
+.img-5 {
+    background-image: url(./img/thanks.svg);
 }
