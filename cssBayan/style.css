@@ -67,12 +67,38 @@ hr {
     background-size: 100% 100%;
 }
 
-/*Mem 1*/
-.select-1:hover .img-1 {
-    background-image: url(./img/how-i-see-russian.svg);
+.img-1 {
+    max-height: 0;
+    overflow: hidden;
+}
+.selector-1:checked ~ .img-1 {
+    transition-timing-function: ease-in-out;
+    max-height: 500px;
 }
 
-.select-1:hover .cross {
+.selector:hover ~ .img-1 {
+    transition-timing-function: ease-in-out;
+    max-height: 500px;
+}
+
+.hidden-checkbox {
+    position: absolute;
+    appearance: none;
+}
+.open-select-1 {
+    display: block;
+    cursor: pointer;
+}
+
+.open-select-1:hover .cross {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.8rem;
+    background-image: url(./icon/cross.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     transform: rotate(45deg);
 }
 
