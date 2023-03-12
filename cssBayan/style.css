@@ -64,8 +64,8 @@ body {
 }
 .img {
     margin: auto;
-    width: 250px;
-    height: 250px;
+    width: 14rem;
+    height: 14rem;
     max-height: 0;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -82,14 +82,14 @@ body {
     background-image: url(./img/how-i-see-russian.svg);
 }
 .selector-1:checked ~ .img-1 {
-    max-height: 250px;
+    max-height: 14rem;
     animation: none;
 }
 .selector-1:checked ~ .cross {
     rotate: 45deg;
 }
 .open-selector-1:hover ~ .img-1 {
-    max-height: 250px;
+    max-height: 14rem;
 }
 .hidden-checkbox {
     position: absolute;
@@ -109,14 +109,14 @@ body {
     background-image: url(./img/not-a-bug-russian.svg);
 }
 .selector-2:checked ~ .img-2 {
-    max-height: 250px;
+    max-height: 14rem;
     animation: none;
 }
 .selector-2:checked ~ .cross {
     rotate: 45deg;
 }
 .open-selector-2:hover ~ .img-2 {
-    max-height: 250px;
+    max-height: 14rem;
 }
 .open-selector-2 {
     display: block;
@@ -132,14 +132,14 @@ body {
     background-image: url(./img/one-hour-before-deadline.svg);
 }
 .selector-3:checked ~ .img-3 {
-    max-height: 250px;
+    max-height: 14rem;
     animation: none;
 }
 .selector-3:checked ~ .cross {
     rotate: 45deg;
 }
 .open-selector-3:hover ~ .img-3 {
-    max-height: 250px;
+    max-height: 14rem;
 }
 .open-selector-3 {
     display: block;
@@ -155,14 +155,14 @@ body {
     background-image: url(./img/reading-the-chat.svg);
 }
 .selector-4:checked ~ .img-4 {
-    max-height: 250px;
+    max-height: 14rem;
     animation: none;
 }
 .selector-4:checked ~ .cross {
     rotate: 45deg;
 }
 .open-selector-4:hover ~ .img-4 {
-    max-height: 250px;
+    max-height: 14rem;
 }
 .open-selector-4 {
     display: block;
@@ -178,14 +178,14 @@ body {
     background-image: url(./img/thanks.svg);
 }
 .selector-5:checked ~ .img-5 {
-    max-height: 250px;
+    max-height: 14rem;
     animation: none;
 }
 .selector-5:checked ~ .cross {
     rotate: 45deg;
 }
 .open-selector-5:hover ~ .img-5 {
-    max-height: 250px;
+    max-height: 14rem;
 }
 .open-selector-5{
     display: block;
@@ -225,7 +225,7 @@ body {
 
     /*Mem 4*/
     .selector-4:checked ~ .img-4 {
-        max-height: 250px;
+        max-height: 14rem;
         animation: zoom;
         animation-duration: 1s;
     }
@@ -273,25 +273,25 @@ body {
         top: 1rem;
     }
     .selector-1:checked ~ .img-1 {
-        max-height: 150px;
+        max-height: 10rem;
     }
 
     /*Mem 2*/
     .selector-2:checked ~ .img-2 {
-        max-height: 150px;
+        max-height: 10rem;
     }
     /*Mem 3*/
    .selector-3:checked ~ .img-3 {
-        max-height: 150px;
+        max-height: 10rem;
     }
 
     /*Mem 4*/
     .selector-4:checked ~ .img-4 {
-        max-height: 150px;
+        max-height: 10rem;
     }
 
     /*Mem 5*/
     .selector-5:checked ~ .img-5 {
-        max-height: 150px;
+        max-height: 10rem;
     }
 }
