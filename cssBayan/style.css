@@ -1,0 +1,297 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+@keyframes zoom {
+    0% {transform: scale(0.7);}
+    100% {transform: scale(1);}
+  }
+
+.accordion-box {
+    height: 41em;
+    padding: 1em 0;
+    background-color: beige;
+}
+.name-accordion {
+    margin: 0.1em 0;
+}
+
+.wrapper-accordion {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+}
+
+.accordion {
+    display:flex;
+    flex-direction: column;
+    color: blue;
+}
+.accordion:hover {
+    cursor: pointer;
+    color: black;
+}
+.selects {
+    position: relative;
+    border-bottom: 0.1rem solid grey;
+    font-weight: 600;
+    margin: 0.1em 0;
+}
+.selects:active {
+    color: blue;
+}
+.selects:hover .img{
+    width: 14em;
+    height: 14em;
+    margin: auto;
+    animation-name: zoom ;
+    animation-duration: 1s;
+}
+.cross {
+    overflow: hidden;
+}
+.accordion:hover .cross {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.8rem;
+    background-image: url(./icon/cross.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.img {
+    margin: auto;
+    width: 14rem;
+    height: 14rem;
+    max-height: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    transition: 0.5s;
+}
+.labels {
+    padding: 0.5rem 0;
+}
+
+/*Mem 1*/
+.img-1 {
+    overflow: hidden;
+    background-image: url(./img/how-i-see-russian.svg);
+}
+.selector-1:checked ~ .img-1 {
+    max-height: 14rem;
+    animation: none;
+}
+.selector-1:checked ~ .cross {
+    rotate: 45deg;
+}
+.open-selector-1:hover ~ .img-1 {
+    max-height: 14rem;
+}
+.hidden-checkbox {
+    position: absolute;
+    appearance: none;
+}
+.open-selector-1 {
+    display: block;
+    cursor: pointer;
+}
+.select-1:hover .cross {
+    rotate: 45deg;
+}
+
+/*Mem 2*/
+.img-2 {
+    overflow: hidden;
+    background-image: url(./img/not-a-bug-russian.svg);
+}
+.selector-2:checked ~ .img-2 {
+    max-height: 14rem;
+    animation: none;
+}
+.selector-2:checked ~ .cross {
+    rotate: 45deg;
+}
+.open-selector-2:hover ~ .img-2 {
+    max-height: 14rem;
+}
+.open-selector-2 {
+    display: block;
+    cursor: pointer;
+}
+.select-2:hover .cross {
+    rotate: 45deg;
+}
+
+/*Mem 3*/
+.img-3 {
+    overflow: hidden;
+    background-image: url(./img/one-hour-before-deadline.svg);
+}
+.selector-3:checked ~ .img-3 {
+    max-height: 14rem;
+    animation: none;
+}
+.selector-3:checked ~ .cross {
+    rotate: 45deg;
+}
+.open-selector-3:hover ~ .img-3 {
+    max-height: 14rem;
+}
+.open-selector-3 {
+    display: block;
+    cursor: pointer;
+}
+.select-3:hover .cross {
+    rotate: 45deg;
+}
+
+/*Mem 4*/
+.img-4 {
+    overflow: hidden;
+    background-image: url(./img/reading-the-chat.svg);
+}
+.selector-4:checked ~ .img-4 {
+    max-height: 14rem;
+    animation: none;
+}
+.selector-4:checked ~ .cross {
+    rotate: 45deg;
+}
+.open-selector-4:hover ~ .img-4 {
+    max-height: 14rem;
+}
+.open-selector-4 {
+    display: block;
+    cursor: pointer;
+}
+.select-4:hover .cross {
+    rotate: 45deg;
+}
+
+/*Mem 5*/
+.img-5 {
+    overflow: hidden;
+    background-image: url(./img/thanks.svg);
+}
+.selector-5:checked ~ .img-5 {
+    max-height: 14rem;
+    animation: none;
+}
+.selector-5:checked ~ .cross {
+    rotate: 45deg;
+}
+.open-selector-5:hover ~ .img-5 {
+    max-height: 14rem;
+}
+.open-selector-5{
+    display: block;
+    cursor: pointer;
+}
+.select-5:hover .cross {
+    rotate: 45deg;
+}
+
+@media only screen and (max-width: 820px){
+    body {
+        font-size: 2rem;
+    }
+    .accordion-box {
+        height: 48rem;
+        padding: 1.3rem 7rem;
+    }
+    .wrapper-accordion {
+        width: 100%;
+    }
+    /*Mem 1*/
+    .selector-1:checked ~ .img-1 {
+        animation: zoom;
+        animation-duration: 1s;
+    }
+
+    /*Mem 2*/
+    .selector-2:checked ~ .img-2 {
+        animation: zoom;
+        animation-duration: 1s;
+    }
+    /*Mem 3*/
+   .selector-3:checked ~ .img-3 {
+        animation: zoom;
+        animation-duration: 1s;
+    }
+
+    /*Mem 4*/
+    .selector-4:checked ~ .img-4 {
+        max-height: 14rem;
+        animation: zoom;
+        animation-duration: 1s;
+    }
+
+    /*Mem 5*/
+    .selector-5:checked ~ .img-5 {
+        animation: zoom;
+        animation-duration: 1s;
+    }
+    .selects .cross {
+        width: 0.8rem;
+        height: 0.8rem;
+        position: absolute;
+        top: 0.6rem;
+        right: 0.8rem;
+        background-image: url(./icon/cross.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .accordion:hover .cross {
+        top: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    body {
+        font-size: 0.9rem;
+    }
+    .selects {
+        margin: 0;
+    }
+    .labels {
+        padding: 1rem 0;
+    }
+    .accordion-box {
+        padding: 1.3rem 2rem;
+    }
+    .accordion-box p {
+        padding: 1rem 0rem;
+    }
+    .selects .cross {
+        top: 1rem;
+    }
+    .accordion:hover .cross {
+        top: 1rem;
+    }
+    .selector-1:checked ~ .img-1 {
+        max-height: 10rem;
+    }
+
+    /*Mem 2*/
+    .selector-2:checked ~ .img-2 {
+        max-height: 10rem;
+    }
+    /*Mem 3*/
+   .selector-3:checked ~ .img-3 {
+        max-height: 10rem;
+    }
+
+    /*Mem 4*/
+    .selector-4:checked ~ .img-4 {
+        max-height: 10rem;
+    }
+
+    /*Mem 5*/
+    .selector-5:checked ~ .img-5 {
+        max-height: 10rem;
+    }
+}
