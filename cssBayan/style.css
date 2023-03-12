@@ -35,7 +35,7 @@ body {
 }
 .selects {
     position: relative;
-    border-bottom: 1px solid grey;
+    border-bottom: 0.1rem solid grey;
     font-weight: 600;
     margin: 0.1em 0;
 }
